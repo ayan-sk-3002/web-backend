@@ -8,7 +8,7 @@ const path = require("path")
 const cors = require("cors");
 const { type } = require("os");
 require('dotenv').config()
-const baseUrl = `http://localhost:${port}`
+const baseUrl = `https://nizm-backend.onrender.com`
 
 // MiddleWare 
 app.use(express.json());
