@@ -1,4 +1,4 @@
 { "version": 3, 
-"builds": [{ "source": "./index.js", "use": "@vercel/node" }],
-"routes": [{ "source": "/(.*)", "destination": "/" }]
+"routes": [{ "source": "/(.*)", "destination": "/" }],
+"installCommand": "npm install"
  }
