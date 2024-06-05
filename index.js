@@ -78,7 +78,12 @@ const productSchema = new mongoose.Schema({
 });
 
 const Product = mongoose.model("Product", productSchema);
+// Start Endpoint
 
+app.get('/', (req,res)=>{
+    res.send("Server is Running")
+    console.log("Hello")
+})
 // Endpoint to Add Product
 app.post('/addproduct', async (req, res) => {
     try {
