@@ -1,11 +1,15 @@
-<<<<<<< HEAD
-{ "version": 3, 
-"routes": [{ "source": "/(.*)", "destination": "/" }],
-"installCommand": "npm install"
- }
-=======
+
 { "version": 2, 
-"routes": [{ "src": "/(.*)", "dest": "/" }],
-"installCommand": "npm install"
+ "builds" : [
+  {
+ "src" : "index.js",
+  "use" : "@vercel/node"
  }
->>>>>>> 969d8d838f6b52755047551407118d67b340bf22
+ ],
+"routes": [
+ { 
+  "src": "/(.*)",
+  "dest": "/" 
+ }
+]
+ }
